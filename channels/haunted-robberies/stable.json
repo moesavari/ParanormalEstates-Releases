@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "gameId": "pehr",
+  "gameName": "Paranormal Estates: Haunted Robberies",
+  "channel": "stable",
+  "enabled": false,
+  "version": "0.0.0",
+  "publishedAt": null,
+  "minimumLauncherVersion": "0.1.0",
+  "package": null,
+  "releaseNotesUrl": null
+}
