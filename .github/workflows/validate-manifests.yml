@@ -1,0 +1,42 @@
+name: Validate Update Manifests
+
+on:
+  push:
+    paths:
+      - "channels/**/*.json"
+      - "schema/**/*.json"
+  pull_request:
+    paths:
+      - "channels/**/*.json"
+      - "schema/**/*.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate JSON syntax and safety rules
+        shell: python
+        run: |
+          import json
+          from pathlib import Path
+          import re
+
+          for path in Path("channels").rglob("*.json"):
+              data = json.loads(path.read_text(encoding="utf-8"))
+              assert data["schemaVersion"] == 1
+              assert re.fullmatch(r"\\d+\\.\\d+\\.\\d+", data["version"])
+              package = data.get("package")
+              if data["enabled"]:
+                  assert package, f"{path}: enabled channel requires package"
+                  assert package["url"].startswith("https://")
+                  assert re.fullmatch(r"[0-9a-fA-F]{64}", package["sha256"])
+                  assert package["sizeBytes"] > 0
+              print(f"OK: {path}")
