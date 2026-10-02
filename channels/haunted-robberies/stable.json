@@ -3,10 +3,15 @@
   "gameId": "pehr",
   "gameName": "Paranormal Estates: Haunted Robberies",
   "channel": "stable",
-  "enabled": false,
-  "version": "0.0.0",
-  "publishedAt": null,
+  "enabled": true,
+  "version": "0.4.0",
+  "publishedAt": "2026-10-02T00:00:00Z",
   "minimumLauncherVersion": "0.1.0",
-  "package": null,
-  "releaseNotesUrl": null
+  "package": {
+    "url": "https://github.com/moesavari/ParanormalEstates-Releases/releases/download/pehr-v0.4.0/PEHR-0.4.0-Windows.zip",
+    "sha256": "9b9d7bf87e1721c1a9b9599701d56e031670bfdc162293e6e1824e9bc9d7960e",
+    "sizeBytes": 2106876303,
+    "format": "zip"
+  },
+  "releaseNotesUrl": "https://github.com/moesavari/ParanormalEstates-Releases/releases/tag/pehr-v0.4.0"
 }
