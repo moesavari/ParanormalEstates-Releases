@@ -32,7 +32,7 @@ jobs:
           for path in Path("channels").rglob("*.json"):
               data = json.loads(path.read_text(encoding="utf-8"))
               assert data["schemaVersion"] == 1
-              assert re.fullmatch(r"\\d+\\.\\d+\\.\\d+", data["version"])
+              assert re.fullmatch(r"\d+\.\d+\.\d+", data["version"])
               package = data.get("package")
               if data["enabled"]:
                   assert package, f"{path}: enabled channel requires package"
