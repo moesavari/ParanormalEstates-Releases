@@ -5,12 +5,12 @@
   "channel": "stable",
   "enabled": true,
   "version": "0.6.0",
-  "publishedAt": "2026-11-15T11:28:49Z",
+  "publishedAt": "2026-11-15T21:35:25Z",
   "minimumLauncherVersion": "0.1.0",
   "package": {
-    "url": "https://downloads.grandmishap.com/PEHR_0.6.0.zip",
-    "sha256": "9cc368ac319cd5bccc31c9cc36f86b109e26b1e4d5c76680cb8fc2490241f737",
-    "sizeBytes": 4449916292,
+    "url": "https://downloads.grandmishap.com/PEHR_0.6.0FINAL.zip",
+    "sha256": "08cf45e1fbd89265040bd579316e51ae1f5e5cacc26b595723469cfc313e27ff",
+    "sizeBytes": 4449896293,
     "format": "zip"
   },
   "releaseNotesUrl": null
