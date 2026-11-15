@@ -4,13 +4,13 @@
   "gameName": "Paranormal Estates: Haunted Robberies",
   "channel": "stable",
   "enabled": true,
-  "version": "0.6.0",
-  "publishedAt": "2026-11-14T11:24:39Z",
+  "version": "0.6.1",
+  "publishedAt": "2026-11-15T04:09:30.449Z",
   "minimumLauncherVersion": "0.1.0",
   "package": {
-    "url": "https://downloads.grandmishap.com/PEHR_0.6.0TEST.zip",
-    "sha256": "d4b2fe863b8d6d23301871c3d69edda72f42f4e43d877a91fe463bd922585a1b",
-    "sizeBytes": 4344474924,
+    "url": "https://downloads.grandmishap.com/PEHR_060DEVTEST_001.zip",
+    "sha256": "d576114a28288c2c49c7a73cc1ef702ec907560401a060ba0ea333891203b9a3",
+    "sizeBytes": 4449227770,
     "format": "zip"
   },
   "releaseNotesUrl": null
